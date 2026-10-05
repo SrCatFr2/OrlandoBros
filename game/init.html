@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Orlando Bros</title>
+
+    <link rel="stylesheet" href="../styles/game.css">
+</head>
+
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+        <div class="hud-item">
+            ORLANDO
+        </div>
+
+        <div class="hud-item">
+            MUNDO <span id="worldNumber">1</span>
+        </div>
+
+        <div class="hud-item">
+            <span id="coinCount">0</span> $
+        </div>
+    </div>
+
+    <div id="mobileControls">
+
+        <div class="movement-buttons">
+            <button id="leftButton" aria-label="Izquierda">
+                ◀
+            </button>
+
+            <button id="rightButton" aria-label="Derecha">
+                ▶
+            </button>
+        </div>
+
+        <button id="jumpButton" aria-label="Saltar">
+            ▲
+        </button>
+
+    </div>
+
+    <div id="deathScreen">
+
+        <div class="death-box">
+            <h1>ORLANDO HA VALIDO VERGA</h1>
+
+            <p>Pero todavía puede intentarlo.</p>
+
+            <button id="restartButton">
+                REINTENTAR
+            </button>
+
+            <button id="menuButton">
+                MENU
+            </button>
+        </div>
+
+    </div>
+
+    <script type="module" src="../scripts/game.js"></script>
+
+</body>
+</html>
