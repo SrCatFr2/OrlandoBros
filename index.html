@@ -2,174 +2,213 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Orlando Bros</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>ORLANDO BROS</title>
+
     <link rel="stylesheet" href="styles/menu.css">
 </head>
 
 <body>
 
-<main class="menu">
+    <main class="menu">
 
-    <div class="sky"></div>
+        <!-- CAPA DE FONDO -->
+        <div class="sky">
 
-    <div class="cloud cloud-1"></div>
-    <div class="cloud cloud-2"></div>
+            <div class="sun"></div>
 
-    <!-- PERSONAJES -->
-    <div class="characters">
-
-        <!-- ORLANDO -->
-        <div class="character orlando">
-
-            <div class="name">ORLANDO</div>
-
-            <div class="sprite">
-
-                <div class="hat">
-                    <div class="hat-logo">O</div>
-                </div>
-
-                <div class="head">
-                    <div class="ear left"></div>
-                    <div class="ear right"></div>
-
-                    <div class="eye eye-left"></div>
-                    <div class="eye eye-right"></div>
-
-                    <div class="nose"></div>
-
-                    <div class="mustache"></div>
-
-                    <div class="mouth"></div>
-                </div>
-
-                <div class="body">
-                    <div class="overall overall-left"></div>
-                    <div class="overall overall-right"></div>
-                </div>
-
-                <div class="arm arm-left"></div>
-                <div class="arm arm-right"></div>
-
-                <div class="leg leg-left"></div>
-                <div class="leg leg-right"></div>
-
-                <div class="shoe shoe-left"></div>
-                <div class="shoe shoe-right"></div>
-
+            <div class="cloud cloud-1">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+
+            <div class="cloud cloud-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="floating-block block-1"></div>
+            <div class="floating-block block-2"></div>
+            <div class="floating-block block-3"></div>
+
         </div>
 
 
-        <!-- ULISES -->
-        <div class="character ulises">
+        <!-- TITULO -->
+        <header class="logo-area">
 
-            <div class="name">ULISES</div>
+            <div class="logo-small">UNA AVENTURA COMPLETAMENTE NORMAL</div>
 
-            <div class="sprite">
-
-                <div class="hat">
-                    <div class="hat-logo">U</div>
-                </div>
-
-                <div class="head">
-                    <div class="ear left"></div>
-                    <div class="ear right"></div>
-
-                    <div class="eye eye-left"></div>
-                    <div class="eye eye-right"></div>
-
-                    <div class="nose"></div>
-
-                    <div class="mustache"></div>
-
-                    <div class="mouth"></div>
-                </div>
-
-                <div class="body">
-                    <div class="overall overall-left"></div>
-                    <div class="overall overall-right"></div>
-                </div>
-
-                <div class="arm arm-left"></div>
-                <div class="arm arm-right"></div>
-
-                <div class="leg leg-left"></div>
-                <div class="leg leg-right"></div>
-
-                <div class="shoe shoe-left"></div>
-                <div class="shoe shoe-right"></div>
-
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- LOGO -->
-    <section class="menu-content">
-
-        <div class="logo">
-            <div class="logo-small">
-                UNA AVENTURA ABSURDAMENTE NORMAL
-            </div>
-
-            <h1>
-                <span>ORLANDO</span>
-                <strong>BROS</strong>
+            <h1 class="logo">
+                <span class="logo-orlando">ORLANDO</span>
+                <span class="logo-bros">BROS</span>
             </h1>
+
+            <div class="logo-subtitle">
+                <span>© NADIE SABE QUIEN HIZO ESTO</span>
+            </div>
+
+        </header>
+
+
+        <!-- ESCENARIO CENTRAL -->
+        <section class="stage">
+
+            <!-- ORLANDO -->
+
+            <div class="character character-orlando">
+
+                <div class="speech speech-orlando">
+                    YO SOY ORLANDO
+                </div>
+
+                <div class="sprite orlando">
+
+                    <div class="pixel-hair"></div>
+
+                    <div class="head">
+                        <div class="eye eye-left"></div>
+                        <div class="eye eye-right"></div>
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="body">
+                        <div class="shirt"></div>
+                        <div class="overall overall-left"></div>
+                        <div class="overall overall-right"></div>
+                    </div>
+
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+
+                    <div class="leg leg-left"></div>
+                    <div class="leg leg-right"></div>
+
+                    <div class="shoe shoe-left"></div>
+                    <div class="shoe shoe-right"></div>
+
+                </div>
+
+                <div class="character-name">ORLANDO</div>
+
+            </div>
+
+
+            <!-- BOTONES -->
+
+            <nav class="main-menu">
+
+                <button class="menu-button primary" onclick="location.href='game/init.html'">
+                    <span class="button-arrow">▶</span>
+                    <span>JUGAR</span>
+                </button>
+
+                <button class="menu-button">
+                    <span class="button-arrow">▶</span>
+                    <span>NIVELES</span>
+                </button>
+
+                <button class="menu-button">
+                    <span class="button-arrow">▶</span>
+                    <span>OPCIONES</span>
+                </button>
+
+                <div class="menu-warning">
+                    NO TOQUES OPCIONES
+                </div>
+
+            </nav>
+
+
+            <!-- ULISES -->
+
+            <div class="character character-ulises">
+
+                <div class="speech speech-ulises">
+                    NO SE QUE ESTOY HACIENDO
+                </div>
+
+                <div class="sprite ulises">
+
+                    <div class="pixel-hair"></div>
+
+                    <div class="head">
+                        <div class="eye eye-left"></div>
+                        <div class="eye eye-right"></div>
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="body">
+                        <div class="shirt"></div>
+                        <div class="overall overall-left"></div>
+                        <div class="overall overall-right"></div>
+                    </div>
+
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+
+                    <div class="leg leg-left"></div>
+                    <div class="leg leg-right"></div>
+
+                    <div class="shoe shoe-left"></div>
+                    <div class="shoe shoe-right"></div>
+
+                </div>
+
+                <div class="character-name">ULISES</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUELO -->
+        <div class="ground">
+
+            <div class="grass"></div>
+
+            <div class="ground-blocks">
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
         </div>
 
-        <nav class="menu-buttons">
 
-            <button class="menu-button primary" id="playButton">
-                JUGAR
-            </button>
+        <!-- DECORACION EXTRA -->
 
-            <button class="menu-button" id="levelsButton">
-                NIVELES
-            </button>
+        <div class="coin coin-1">¢</div>
+        <div class="coin coin-2">¢</div>
+        <div class="coin coin-3">¢</div>
 
-            <button class="menu-button" id="optionsButton">
-                OPCIONES
-            </button>
+        <div class="glitch-text glitch-1">ORLANDO??</div>
+        <div class="glitch-text glitch-2">ULISES</div>
 
-        </nav>
+        <div class="version">
+            VER. 0.0.7 // PROBABLEMENTE
+        </div>
 
-    </section>
-
-
-    <!-- SUELO -->
-    <div class="ground">
-        <div class="grass"></div>
-        <div class="dirt"></div>
-    </div>
-
-    <footer>
-        ORLANDO BROS © 2026
-    </footer>
-
-</main>
-
-
-<script>
-const playButton = document.getElementById("playButton");
-const levelsButton = document.getElementById("levelsButton");
-const optionsButton = document.getElementById("optionsButton");
-
-playButton.onclick = () => {
-    window.location.href = "game/init.html";
-};
-
-levelsButton.onclick = () => {
-    alert("Los niveles todavía están siendo construidos por Orlando.");
-};
-
-optionsButton.onclick = () => {
-    alert("No hay opciones. Orlando decidió que no hacen falta.");
-};
-</script>
+    </main>
 
 </body>
 </html>
