@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Orlando Bros</title>
     <link rel="stylesheet" href="styles/menu.css">
 </head>
@@ -19,58 +19,106 @@
     <!-- PERSONAJES -->
     <div class="characters">
 
+        <!-- ORLANDO -->
         <div class="character orlando">
-            <div class="cap"></div>
-            <div class="head">
-                <div class="eye eye-left"></div>
-                <div class="eye eye-right"></div>
-                <div class="nose"></div>
-                <div class="mustache"></div>
+
+            <div class="name">ORLANDO</div>
+
+            <div class="sprite">
+
+                <div class="hat">
+                    <div class="hat-logo">O</div>
+                </div>
+
+                <div class="head">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+
+                    <div class="eye eye-left"></div>
+                    <div class="eye eye-right"></div>
+
+                    <div class="nose"></div>
+
+                    <div class="mustache"></div>
+
+                    <div class="mouth"></div>
+                </div>
+
+                <div class="body">
+                    <div class="overall overall-left"></div>
+                    <div class="overall overall-right"></div>
+                </div>
+
+                <div class="arm arm-left"></div>
+                <div class="arm arm-right"></div>
+
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+
+                <div class="shoe shoe-left"></div>
+                <div class="shoe shoe-right"></div>
+
             </div>
-
-            <div class="body"></div>
-
-            <div class="arm arm-left"></div>
-            <div class="arm arm-right"></div>
-
-            <div class="leg leg-left"></div>
-            <div class="leg leg-right"></div>
         </div>
 
+
+        <!-- ULISES -->
         <div class="character ulises">
-            <div class="cap"></div>
-            <div class="head">
-                <div class="eye eye-left"></div>
-                <div class="eye eye-right"></div>
-                <div class="nose"></div>
-                <div class="mustache"></div>
+
+            <div class="name">ULISES</div>
+
+            <div class="sprite">
+
+                <div class="hat">
+                    <div class="hat-logo">U</div>
+                </div>
+
+                <div class="head">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+
+                    <div class="eye eye-left"></div>
+                    <div class="eye eye-right"></div>
+
+                    <div class="nose"></div>
+
+                    <div class="mustache"></div>
+
+                    <div class="mouth"></div>
+                </div>
+
+                <div class="body">
+                    <div class="overall overall-left"></div>
+                    <div class="overall overall-right"></div>
+                </div>
+
+                <div class="arm arm-left"></div>
+                <div class="arm arm-right"></div>
+
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+
+                <div class="shoe shoe-left"></div>
+                <div class="shoe shoe-right"></div>
+
             </div>
-
-            <div class="body"></div>
-
-            <div class="arm arm-left"></div>
-            <div class="arm arm-right"></div>
-
-            <div class="leg leg-left"></div>
-            <div class="leg leg-right"></div>
         </div>
 
     </div>
+
 
     <!-- LOGO -->
     <section class="menu-content">
 
         <div class="logo">
-            <div class="small-title">THE ABSOLUTELY NORMAL</div>
+            <div class="logo-small">
+                UNA AVENTURA ABSURDAMENTE NORMAL
+            </div>
 
             <h1>
                 <span>ORLANDO</span>
                 <strong>BROS</strong>
             </h1>
-
-            <div class="subtitle">
-                una aventura bastante cuestionable
-            </div>
         </div>
 
         <nav class="menu-buttons">
@@ -91,30 +139,35 @@
 
     </section>
 
+
+    <!-- SUELO -->
     <div class="ground">
         <div class="grass"></div>
         <div class="dirt"></div>
     </div>
 
     <footer>
-        ORLANDO BROS // 2026 // DEFINITIVAMENTE NO ES MARIO
+        ORLANDO BROS © 2026
     </footer>
 
 </main>
 
+
 <script>
 const playButton = document.getElementById("playButton");
+const levelsButton = document.getElementById("levelsButton");
+const optionsButton = document.getElementById("optionsButton");
 
 playButton.onclick = () => {
-    location.href = "game/init.html";
+    window.location.href = "game/init.html";
 };
 
-document.getElementById("levelsButton").onclick = () => {
-    alert("Todavia no hay niveles, we.");
+levelsButton.onclick = () => {
+    alert("Los niveles todavía están siendo construidos por Orlando.");
 };
 
-document.getElementById("optionsButton").onclick = () => {
-    alert("No hay opciones. Todo esta perfectamente mal.");
+optionsButton.onclick = () => {
+    alert("No hay opciones. Orlando decidió que no hacen falta.");
 };
 </script>
 
