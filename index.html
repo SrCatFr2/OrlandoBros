@@ -2,91 +2,121 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orlando Bros</title>
-
     <link rel="stylesheet" href="styles/menu.css">
 </head>
 
 <body>
 
-    <main class="menu">
+<main class="menu">
 
-        <!-- Fondo -->
-        <div class="sky"></div>
+    <div class="sky"></div>
 
-        <div class="cloud cloud-1"></div>
-        <div class="cloud cloud-2"></div>
-        <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
 
-        <!-- Decoración -->
-        <div class="mountains">
-            <div class="mountain mountain-1"></div>
-            <div class="mountain mountain-2"></div>
-            <div class="mountain mountain-3"></div>
+    <!-- PERSONAJES -->
+    <div class="characters">
+
+        <div class="character orlando">
+            <div class="cap"></div>
+            <div class="head">
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="nose"></div>
+                <div class="mustache"></div>
+            </div>
+
+            <div class="body"></div>
+
+            <div class="arm arm-left"></div>
+            <div class="arm arm-right"></div>
+
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
         </div>
 
-        <!-- Contenido -->
-        <section class="menu-content">
+        <div class="character ulises">
+            <div class="cap"></div>
+            <div class="head">
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="nose"></div>
+                <div class="mustache"></div>
+            </div>
 
-            <header class="logo">
-                <div class="logo-small">THE ADVENTURES OF</div>
+            <div class="body"></div>
 
-                <h1>
-                    <span>ORLANDO</span>
-                    <strong>BROS</strong>
-                </h1>
-            </header>
+            <div class="arm arm-left"></div>
+            <div class="arm arm-right"></div>
 
-            <nav class="menu-buttons">
-
-                <button class="menu-button primary" id="playButton">
-                    <span>JUGAR</span>
-                </button>
-
-                <button class="menu-button" id="levelsButton">
-                    <span>NIVELES</span>
-                </button>
-
-                <button class="menu-button" id="optionsButton">
-                    <span>OPCIONES</span>
-                </button>
-
-            </nav>
-
-        </section>
-
-        <!-- Suelo -->
-        <div class="ground">
-            <div class="grass"></div>
-            <div class="dirt"></div>
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
         </div>
 
-        <footer>
-            ORLANDO BROS • 2026
-        </footer>
+    </div>
 
-    </main>
+    <!-- LOGO -->
+    <section class="menu-content">
 
-    <script>
-        const playButton = document.getElementById("playButton");
-        const levelsButton = document.getElementById("levelsButton");
-        const optionsButton = document.getElementById("optionsButton");
+        <div class="logo">
+            <div class="small-title">THE ABSOLUTELY NORMAL</div>
 
-        playButton.addEventListener("click", () => {
-            window.location.href = "game/init.html";
-        });
+            <h1>
+                <span>ORLANDO</span>
+                <strong>BROS</strong>
+            </h1>
 
-        levelsButton.addEventListener("click", () => {
-            alert("Selector de niveles próximamente.");
-        });
+            <div class="subtitle">
+                una aventura bastante cuestionable
+            </div>
+        </div>
 
-        optionsButton.addEventListener("click", () => {
-            alert("Opciones próximamente.");
-        });
-    </script>
+        <nav class="menu-buttons">
+
+            <button class="menu-button primary" id="playButton">
+                JUGAR
+            </button>
+
+            <button class="menu-button" id="levelsButton">
+                NIVELES
+            </button>
+
+            <button class="menu-button" id="optionsButton">
+                OPCIONES
+            </button>
+
+        </nav>
+
+    </section>
+
+    <div class="ground">
+        <div class="grass"></div>
+        <div class="dirt"></div>
+    </div>
+
+    <footer>
+        ORLANDO BROS // 2026 // DEFINITIVAMENTE NO ES MARIO
+    </footer>
+
+</main>
+
+<script>
+const playButton = document.getElementById("playButton");
+
+playButton.onclick = () => {
+    location.href = "game/init.html";
+};
+
+document.getElementById("levelsButton").onclick = () => {
+    alert("Todavia no hay niveles, we.");
+};
+
+document.getElementById("optionsButton").onclick = () => {
+    alert("No hay opciones. Todo esta perfectamente mal.");
+};
+</script>
 
 </body>
 </html>
