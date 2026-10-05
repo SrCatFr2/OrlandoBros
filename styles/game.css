@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #080707;
+    font-family: Arial, Helvetica, sans-serif;
+    touch-action: none;
+}
+
+body {
+    position: relative;
+}
+
+#gameCanvas {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    background: #181313;
+}
+
+#hud {
+    position: fixed;
+
+    top: 18px;
+    left: 18px;
+    right: 18px;
+
+    display: flex;
+    justify-content: space-between;
+
+    pointer-events: none;
+
+    z-index: 10;
+}
+
+.hud-item {
+    padding: 9px 13px;
+
+    color: #f3e7cf;
+
+    background: rgba(15, 10, 10, 0.82);
+
+    border: 2px solid rgba(210, 60, 42, 0.65);
+
+    box-shadow:
+        4px 4px 0 #000,
+        inset 0 0 15px rgba(255, 50, 30, 0.08);
+
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        2px 2px 0 #000;
+}
+
+#mobileControls {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 22px;
+
+    display: none;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 0 22px;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+.movement-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+#mobileControls button {
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid rgba(255, 220, 180, 0.5);
+
+    background: rgba(20, 12, 12, 0.75);
+
+    color: #f4dfc5;
+
+    font-size: 25px;
+    font-weight: 900;
+
+    box-shadow:
+        4px 4px 0 rgba(0, 0, 0, 0.8),
+        inset 0 0 15px rgba(255, 80, 50, 0.1);
+
+    pointer-events: auto;
+
+    user-select: none;
+}
+
+#mobileControls button:active {
+    transform: translate(3px, 3px);
+
+    box-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+#jumpButton {
+    width: 78px !important;
+    height: 78px !important;
+
+    border-radius: 50%;
+}
+
+#deathScreen {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    z-index: 100;
+}
+
+#deathScreen.visible {
+    display: flex;
+}
+
+.death-box {
+    width: min(90%, 480px);
+
+    padding: 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(40, 20, 20, 0.97),
+            rgba(10, 8, 8, 0.97)
+        );
+
+    border: 3px solid #a83224;
+
+    box-shadow:
+        8px 8px 0 #000,
+        0 0 50px rgba(180, 30, 20, 0.2);
+}
+
+.death-box h1 {
+    color: #d94a36;
+
+    font-size: clamp(22px, 5vw, 38px);
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        3px 3px 0 #000;
+}
+
+.death-box p {
+    color: #c9b9a2;
+
+    margin-bottom: 25px;
+}
+
+.death-box button {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 13px;
+
+    border: 2px solid #8e3025;
+
+    background: #351714;
+
+    color: #f1dfc7;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.death-box button:hover {
+    background: #54221c;
+}
+
+@media (max-width: 800px), (pointer: coarse) {
+
+    #mobileControls {
+        display: flex;
+    }
+
+    #hud {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .hud-item {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+
+    #gameCanvas {
+        background: #090707;
+    }
+
+}
