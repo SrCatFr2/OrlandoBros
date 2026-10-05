@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Orlando Bros</title>
+
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+
+    <main class="menu">
+
+        <!-- Fondo -->
+        <div class="sky"></div>
+
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+
+        <!-- Decoración -->
+        <div class="mountains">
+            <div class="mountain mountain-1"></div>
+            <div class="mountain mountain-2"></div>
+            <div class="mountain mountain-3"></div>
+        </div>
+
+        <!-- Contenido -->
+        <section class="menu-content">
+
+            <header class="logo">
+                <div class="logo-small">THE ADVENTURES OF</div>
+
+                <h1>
+                    <span>ORLANDO</span>
+                    <strong>BROS</strong>
+                </h1>
+            </header>
+
+            <nav class="menu-buttons">
+
+                <button class="menu-button primary" id="playButton">
+                    <span>JUGAR</span>
+                </button>
+
+                <button class="menu-button" id="levelsButton">
+                    <span>NIVELES</span>
+                </button>
+
+                <button class="menu-button" id="optionsButton">
+                    <span>OPCIONES</span>
+                </button>
+
+            </nav>
+
+        </section>
+
+        <!-- Suelo -->
+        <div class="ground">
+            <div class="grass"></div>
+            <div class="dirt"></div>
+        </div>
+
+        <footer>
+            ORLANDO BROS • 2026
+        </footer>
+
+    </main>
+
+    <script>
+        const playButton = document.getElementById("playButton");
+        const levelsButton = document.getElementById("levelsButton");
+        const optionsButton = document.getElementById("optionsButton");
+
+        playButton.addEventListener("click", () => {
+            window.location.href = "game/init.html";
+        });
+
+        levelsButton.addEventListener("click", () => {
+            alert("Selector de niveles próximamente.");
+        });
+
+        optionsButton.addEventListener("click", () => {
+            alert("Opciones próximamente.");
+        });
+    </script>
+
+</body>
+</html>
